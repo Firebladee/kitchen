@@ -1,0 +1,30 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    puppetlabs-inifile (1.4.0)
+    puppetlabs-ntp (4.1.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+    puppetlabs-stdlib (4.6.0)
+
+GIT
+  remote: git@github.com:Firebladee/Puppet.git
+  path: modules/vagrant
+  ref: master
+  sha: a1d5c79f65685cb9974e475ccdc511c9880159d9
+  specs:
+    Firebladee-vagrant (0.0.1)
+
+GIT
+  remote: git@github.com:Firebladee/Puppet.git
+  path: modules/yum
+  ref: master
+  sha: a1d5c79f65685cb9974e475ccdc511c9880159d9
+  specs:
+    Firebladee-yum (0.0.1)
+
+DEPENDENCIES
+  Firebladee-vagrant (>= 0)
+  Firebladee-yum (>= 0)
+  puppetlabs-inifile (>= 0)
+  puppetlabs-ntp (>= 0)
+
